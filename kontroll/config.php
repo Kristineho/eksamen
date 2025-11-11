@@ -13,7 +13,8 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 
-try {
+try 
+{
     $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (PDOException $e) {
     die('Database-feil: ' . $e->getMessage());

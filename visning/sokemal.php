@@ -86,35 +86,36 @@
     <h2 class="w3-text-red">Søknadsskjema</h2>
     <p>Fyll ut feltene under for å sende inn din søknad.</p>
 
-    <form action="/eksamen/kontroll/lagre_soknad.php" method="post" enctype="multipart/form-data">
+<form action="../kontroll/lagre_soknad.php" method="post" enctype="multipart/form-data">
 
-        <label for="navn"><b>Navn</b></label>
-        <input type="text" id="navn" name="navn" required>
+    <label for="navn"><b>Navn</b></label>
+    <input type="text" id="navn" name="navn" required>
 
-        <label for="epost"><b>E-post</b></label>
-        <input type="email" id="epost" name="epost" required>
+    <label for="epost"><b>E-post</b></label>
+    <input type="email" id="epost" name="epost" required>
 
-        <label for="telefon"><b>Telefonnummer</b></label>
-        <input type="text" id="telefon" name="telefon">
+    <label for="telefon"><b>Telefonnummer</b></label>
+    <input type="text" id="telefon" name="telefon">
 
-        <label for="stilling"><b>Hvilken stilling søker du?</b></label>
-        <input type="text" id="stilling" name="stilling" required>
+    <label for="stilling"><b>Hvilken stilling søker du?</b></label>
+    <input type="text" id="stilling" name="stilling" required>
 
-        <label for="soeknad"><b>Søknadstekst</b></label>
-        <textarea id="soeknad" name="soeknad" rows="8" required></textarea>
+    <label for="soeknad"><b>Søknadstekst</b></label>
+    <textarea id="soeknad" name="soeknad" rows="8" required></textarea>
 
-        <label for="cv"><b>Last opp CV</b></label>
-        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+    <label for="cv"><b>Last opp CV</b></label>
+    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
 
-        <button type="submit" class="submit-btn">Send søknad</button>
-  </form>
+    <button type="submit" class="submit-btn">Send søknad</button>
+</form>
 
   </div>
-
+<a href="../visning/takk.php" class="w3-button w3-red" style="margin-top:20px;">
+      Tilbake til søknadsskjema
+    </a>
 </body>
 </html>
 
-<!-- lenke til søknadsmalen: <a href="søknad.html" class="stilling-btn">Søk på stillingen</a> -->
 
 
 

@@ -15,7 +15,8 @@ $soknader = $stmt->fetchAll();
   <title>Innsendte søknader</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 2rem; }
-    .card {
+    .card 
+    {
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 16px;
