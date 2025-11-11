@@ -1,0 +1,11 @@
+# Hemmeligheter / miljø
+.htaccess
+.env
+
+# OS/editor
+.DS_Store
+*.log
+
+# (om dere tar i bruk Composer senere)
+vendor/
+composer.lock
