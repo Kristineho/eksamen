@@ -1,7 +1,7 @@
 <?php
 // Databasekonfig
 $host    = 'localhost';
-$db      = 'min_app';      // bytt til databasen din
+$db      = 'eksamen';      // bytt til databasen din
 $user    = 'root';
 $pass    = '';
 $charset = 'utf8mb4';

@@ -4,7 +4,7 @@
 // visning/henteverdier.php
 require_once __DIR__ . '/../config.php';   // OBS: .. for å gå ut av /visning-mappa
 
-$sql = "SELECT * FROM applications ORDER BY created_at DESC";
+$sql = "SELECT * FROM eksamen ORDER BY created_at DESC";
 $stmt = db()->query($sql);
 $soknader = $stmt->fetchAll();
 ?>

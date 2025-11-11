@@ -86,24 +86,29 @@
     <h2 class="w3-text-red">Søknadsskjema</h2>
     <p>Fyll ut feltene under for å sende inn din søknad.</p>
 
-    <form action="#" method="post" enctype="multipart/form-data">
-      <label for="navn"><b>Navn</b></label>
-      <input type="text" id="navn" name="navn" placeholder="Skriv inn ditt navn" required>
+    <form action="/eksamen/kontroll/lagre_soknad.php" method="post" enctype="multipart/form-data">
 
-      <label for="epost"><b>E-post</b></label>
-      <input type="email" id="epost" name="epost" placeholder="din@epost.no" required>
+        <label for="navn"><b>Navn</b></label>
+        <input type="text" id="navn" name="navn" required>
 
-      <label for="stilling"><b>Hvilken stilling søker du?</b></label>
-      <input type="text" id="stilling" name="stilling" placeholder="F.eks. Førsteamanuensis i økonomi" required>
+        <label for="epost"><b>E-post</b></label>
+        <input type="email" id="epost" name="epost" required>
 
-      <label for="soeknad"><b>Søknadstekst</b></label>
-      <textarea id="soeknad" name="soeknad" rows="8" placeholder="Skriv din søknad her..." required></textarea>
+        <label for="telefon"><b>Telefonnummer</b></label>
+        <input type="text" id="telefon" name="telefon">
 
-      <label for="cv"><b>Last opp CV</b></label>
-      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+        <label for="stilling"><b>Hvilken stilling søker du?</b></label>
+        <input type="text" id="stilling" name="stilling" required>
 
-      <button type="submit" class="submit-btn">Send søknad</button>
-    </form>
+        <label for="soeknad"><b>Søknadstekst</b></label>
+        <textarea id="soeknad" name="soeknad" rows="8" required></textarea>
+
+        <label for="cv"><b>Last opp CV</b></label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+        <button type="submit" class="submit-btn">Send søknad</button>
+  </form>
+
   </div>
 
 </body>

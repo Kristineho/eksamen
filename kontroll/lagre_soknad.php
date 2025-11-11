@@ -18,7 +18,7 @@ if (!empty($_FILES['cv']['name'])) {
 }
 
 // Lagre i databasen
-$sql = "INSERT INTO applications (name, email, position, application_text, cv_filename)
+$sql = "INSERT INTO eksamen (name, email, position, application_text, cv_filename)
         VALUES (:name, :email, :position, :application_text, :cv_filename)";
 $stmt = db()->prepare($sql);
 $stmt->execute([
@@ -29,5 +29,5 @@ $stmt->execute([
     'cv_filename' => $cvFilnavn
 ]);
 
-header('Location: ../visning/henteverdier.php');
+header('Location: /eksamen/kontroll/henteverdier.php');
 exit;
